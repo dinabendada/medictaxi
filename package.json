@@ -2,9 +2,10 @@
   "name": "medikalize",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js", "scripts": {
-    "start": "SET NODE_ENV=development&& nodemon ./bin/www",
-    "start:prod": " SET NODE_ENV=production&& nodemon ./bin/www",
+  "main": "app.js",  "scripts": {
+    "start": "cross-env NODE_ENV=devlopement  nodemon ./bin/www",
+    "start:prod": "cross-env NODE_ENV=production nodemon ./bin/www",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
