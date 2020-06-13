@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "SET NODE_ENV=development&& nodemon ./bin/www",
-    "start:prod": "  NODE_ENV=production&& nodemon ./bin/www",
+    "start": "cross-env NODE_ENV=devlopement  nodemon ./bin/www",
+    "start:prod": "cross-env NODE_ENV=production nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,7 +14,6 @@
     "axios": "^0.19.2",
     "bcrypt": "^4.0.1",
     "connect-mongo": "^3.2.0",
-    "cross-env": "^7.0.2",
     "engine": "^1.0.0",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
